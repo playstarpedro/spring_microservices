@@ -1,0 +1,13 @@
+server:
+  port: 8082
+  wait-time-in-ms-when-sync-empty: 3000
+
+spring:
+  spring:
+    profiles:
+      active: native
+  data:
+      mongodb:
+        uri: mongodb://admin:0079@localhost:27017/online_sales
+        database: product
+        auto-index-creation: true
