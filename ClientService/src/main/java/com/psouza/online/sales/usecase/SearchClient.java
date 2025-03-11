@@ -30,8 +30,8 @@ public class SearchClient {
     }
 
     public Boolean isRegistered(String id) {
-        Optional<Client> cliente = clientRepository.findById(id);
-        return cliente.isPresent() ? true : false;
+        Optional<Client> client = clientRepository.findById(id);
+        return client.isPresent() ? true : false;
     }
 
     public Client searchByCpf(String cpf) {

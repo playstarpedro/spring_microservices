@@ -9,11 +9,8 @@ import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import io.swagger.v3.oas.annotations.media.Schema;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+
+import lombok.*;
 
 @Document(collection = "client")
 @Getter
@@ -25,7 +22,7 @@ import lombok.Setter;
 public class Client {
 
     @Id
-    @Schema(description = "Unique identifier of the client", hidden = true) // Oculta o campo no Swagger
+    @Schema(description = "Unique identifier of the client", hidden = true)
     private String id;
 
     @NotNull
